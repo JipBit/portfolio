@@ -24,7 +24,7 @@
         </div>
 
         <div class="mt-8">
-            <h1 class="text-4xl font-semibold text-center">PROJECTS</h1>
+            <h1 class="text-4xl font-semibold lg:text-left text-center">PROJECTS</h1>
             <div v-for="article of articles" :key="article" class="items-center flex justify-center">
                 <div class="bg-[#222533] max-w-xl p-6 rounded-md mt-4 lg:flex">
                     <img class="lg:w-32 h-auto rounded-md lg:hidden w-full mb-4 object-cover" :src="require(`~/assets/${article.img}`)" alt="project image">
