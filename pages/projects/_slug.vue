@@ -1,6 +1,6 @@
 <template>
-    <article class="prose lg:prose-xl">
-        <nuxt-content :document="article" />
+    <article>
+        <nuxt-content :document="article" class="hidden"/>
     </article>
 </template>
 
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style>
-
+body{
+    @apply text-white bg-[#141621] font-poppins;
+}
 </style>
