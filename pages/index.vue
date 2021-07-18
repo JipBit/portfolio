@@ -8,7 +8,7 @@
             <h2 class="text-xl font-semibold">front-end developer • ui/ux designer</h2>
 
             <div class="lg:max-w-sm mt-6">
-                <p>I like to examine space and time while I make cool ideas come to life. I'm currently a front-end developer at <a class="text-blue-500" href="https://hostsapling.net" target="_blank" rel="noopener noreferrer">Hostsapling</a> & <a class="text-blue-500" href="https://nationalknightsleague.com" target="_blank" rel="noopener noreferrer">National Knights League</a>.</p>
+                <p>I like to examine space and time while I make cool ideas come to life. I'm currently a front-end developer at Hostsapling & National Knights League.</p>
                 <br>
                 <p>I also enjoy socializing and working with others. Feel free to contact or check me out below.</p>
             </div>
@@ -23,18 +23,20 @@
             </div>
         </div>
 
-        <div class="mt-8">
+        <div class="mt-8 lg:mt-0">
             <h1 class="text-4xl font-semibold lg:text-left text-center">PROJECTS</h1>
             <div v-for="article of articles" :key="article" class="items-center flex justify-center">
-                <div class="bg-[#222533] max-w-xl p-6 rounded-md mt-4 lg:flex">
-                    <img class="lg:w-32 h-auto rounded-md lg:hidden w-full mb-4 object-cover" :src="require(`~/assets/${article.img}`)" alt="project image">
-                    <div class="mr-8">
-                        <h1 class="font-semibold text-2xl">{{ article.title }}</h1>
-                        <span class="text-[#595C69]">{{ formatDate(article.createdAt) }}</span>
-                        <p class="mt-2">{{ article.description }}</p>
+                <a :href="article.url" target="_blank" rel="noopener noreferrer">
+                    <div class="bg-[#222533] max-w-xl p-6 rounded-md mt-4 lg:flex">
+                        <img class="lg:w-32 h-auto rounded-md lg:hidden w-full mb-4 object-cover" :src="require(`~/assets/${article.img}`)" alt="project image">
+                        <div class="mr-8">
+                            <h1 class="font-semibold text-2xl">{{ article.title }}</h1>
+                            <span class="text-[#595C69]">{{ formatDate(article.createdAt) }}</span>
+                            <p class="mt-2">{{ article.description }}</p>
+                        </div>
+                        <img class="w-32 h-auto rounded-md hidden lg:block object-cover" :src="require(`~/assets/${article.img}`)" alt="project image">
                     </div>
-                    <img class="w-32 h-auto rounded-md hidden lg:block object-cover" :src="require(`~/assets/${article.img}`)" alt="project image">
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -45,7 +47,7 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content("articles", params.slug)
       .sortBy("createdAt", "asc")
-      .only(["title", "description", "img", "slug", "createdAt"])
+      .only(["title", "description", "img", "slug", "url", "createdAt"])
       .fetch();
 
     return { articles };
