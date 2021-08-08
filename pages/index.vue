@@ -30,7 +30,6 @@
         </div>
 
         <div class="mt-8 lg:mt-0">
-            <h1 class="text-4xl font-semibold lg:text-left text-center">PROJECTS</h1>
             <div v-for="article of articles" :key="article" class="items-center flex justify-center">
                 <a :href="article.url" target="_blank" rel="noopener noreferrer">
                     <div class="bg-[#222533] max-w-xl p-6 rounded-md mt-4 lg:flex hover:transform hover:scale-105">
