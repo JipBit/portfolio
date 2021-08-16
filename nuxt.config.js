@@ -6,14 +6,38 @@ export default {
   head: {
     title: 'Jeez',
     meta: [
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'Jeez',
+      },
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A portfolio from the man himself. Im a front-end web developer and ui/ux designer.' },
-      { hid: 'og:description', name: 'og:description', content: 'A portfolio from the man himself. Im a front-end web developer and ui/ux designer.' },
-      { hid: 'og:image', property: 'og:image', content: '/profile.png' },
-      { hid: 'og:title', property: 'og:title', content: 'Jeez' },
-      { hid: 'og:site_name', property: 'og:title', content: 'Jeez' },
-      { name: 'format-detection', content: 'telephone=no' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: "Hello I'm Jeez, a front-end web developer and ui/ux designer.",
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: "Hello I'm Jeez, a front-end web developer and ui/ux designer.",
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: "Portfolio",
+      },
+      {
+        hid: 'theme-color',
+        name: 'theme-color',
+        content: '#febe07',
+      },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: 'https://jeez.netlify.app/_nuxt/img/profile.b7fd470.png',
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
