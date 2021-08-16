@@ -8,7 +8,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A portfolio from the man himself...' },
+      { hid: 'description', name: 'description', content: 'A portfolio from the man himself. Im a front-end web developer and ui/ux designer.' },
+      { hid: 'og:description', name: 'og:description', content: 'A portfolio from the man himself. Im a front-end web developer and ui/ux designer.' },
+      { hid: 'og:image', property: 'og:image', content: '/profile.png' },
+      { hid: 'og:title', property: 'og:title', content: 'Jeez' },
+      { hid: 'og:site_name', property: 'og:title', content: 'Jeez' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
