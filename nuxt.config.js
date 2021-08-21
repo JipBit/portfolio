@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Jeez',
+    title: 'Jeez - Front-End Developer & UI/UX Designer',
     meta: [
       {
         hid: 'og:title',
@@ -16,12 +16,12 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: "Hello I'm Jeez, a front-end web developer and ui/ux designer.",
+        content: "A Front-End Developer and UI/UX Designer.",
       },
       {
         hid: 'og:description',
         name: 'og:description',
-        content: "Hello I'm Jeez, a front-end web developer and ui/ux designer.",
+        content: "A Front-End Developer and UI/UX Designer.",
       },
       {
         hid: 'og:site_name',
