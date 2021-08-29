@@ -1,16 +1,16 @@
 <template>
-    <div class="lg:flex items-center justify-center h-screen">
-
-        <div class="text-center lg:text-left lg:mr-48">
+    <div class="lg:flex justify-center h-screen">
+        <div class="text-center mt-8 lg:mt-32 lg:text-left lg:mr-32 max-w-md m-auto lg:m-0">
             <img class="rounded-md w-48 h-48 mx-auto lg:mx-0" src="~/static/profile.png" alt="profile picture">
             
-            <h1 class="text-5xl mt-6 font-black">Hi, I'm Jeez.</h1>
-            <h2 class="text-xl font-semibold">front-end developer • ui/ux designer</h2>
+            <h1 class="text-5xl mt-6 font-black">Aye, I'm Jeez.</h1>
 
-            <div class="lg:max-w-sm mt-6">
-                <p>I like to examine space and time while I make cool ideas come to life. I'm currently a front-end developer at Hostsapling & National Knights League.</p>
+            <div class="mt-6">
+                <p>A self-taught developer who enjoys coding once in a blue moon. I like to examine space and time while I make cool ideas come to life.</p>
                 <br>
-                <p>I also enjoy socializing and working with others. Feel free to contact or check me out below.</p>
+                <p>I’ve always been “the computer guy” since I was a kid, but I didn’t really pick up coding until earlier in my life. Solving problems with code or creating something on my own makes me feel rewarded the most.</p>
+                <br>
+                <p>I'm currently a Front-End Developer & UI/UX Designer at Hostsapling & National Knights League. I also have an obsesion over space if you couldn’t already tell.</p>
             </div>
 
             <div class="flex space-x-3 mt-4 justify-center lg:justify-start">
@@ -34,14 +34,14 @@
             </div>
         </div>
 
-        <div class="mt-8 lg:mt-0">
+        <div class="mt-8 lg:mt-32">
             <div v-for="article of articles" :key="article" class="items-center flex justify-center">
                 <a :href="article.url" target="_blank" rel="noopener noreferrer">
-                    <div class="bg-[#222533] max-w-xl p-6 rounded-md mt-4 lg:flex hover:transform hover:scale-105">
-                        <img class="lg:w-32 h-auto rounded-md lg:hidden w-full mb-4 object-cover" :src="require(`~/assets/${article.img}`)" alt="project image">
+                    <div class="bg-[#202020] max-w-xl p-6 rounded-md mb-4 lg:flex hover:transform hover:scale-105">
+                        <img class="lg:w-32 h-auto rounded-md lg:hidden w-full mb-4 object-cover" :src="require(`~/static/${article.img}`)" alt="project image">
                         <div class="mr-8">
                             <h1 class="font-semibold text-2xl">{{ article.title }}</h1>
-                            <span class="text-[#595C69]">{{ article.date }}</span>
+                            <span class="text-[#C0C0C0]">{{ article.date }}</span>
                             <p class="mt-2">{{ article.description }}</p>
                             <div class="mt-2">
                                 <span class="rounded-md bg-[#4bb483] text-[#4bb483] px-2 py-1 text-xs bg-opacity-20" v-if="article.tags.includes('nuxt')">Nuxt</span>
@@ -52,7 +52,7 @@
                                 <span class="rounded-md bg-[#ea4c89] text-[#ea4c89] px-2 py-1 text-xs bg-opacity-20" v-if="article.tags.includes('figma')">Dribbble</span>
                             </div>
                         </div>
-                        <img class="w-32 h-auto rounded-md hidden lg:block object-cover" :src="require(`~/assets/${article.img}`)" alt="project image">
+                        <img class="w-32 h-auto rounded-md hidden lg:block object-cover" :src="require(`~/static/${article.img}`)" alt="project image">
                     </div>
                 </a>
             </div>
@@ -75,6 +75,26 @@ export default {
 
 <style>
 body{
-    @apply text-white bg-[#141621] font-poppins;
+    @apply text-white bg-[#151515] font-prompt;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #252525;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #303030;
 }
 </style>

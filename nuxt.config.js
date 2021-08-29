@@ -4,7 +4,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Jeez - Front-End Developer & UI/UX Designer',
+    title: 'Jeez - Web Developer',
+
     meta: [
       {
         hid: 'og:title',
@@ -36,13 +37,13 @@ export default {
       {
         hid: 'og:image',
         name: 'og:image',
-        content: 'https://jeez.netlify.app/_nuxt/img/profile.b7fd470.png',
+        content: 'profile.png',
       }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet"' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Prompt:wght@400;600;900&display=swap" rel="stylesheet"' }
     ]
   },
 

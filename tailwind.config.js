@@ -6,8 +6,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        '404-background': "url('~/static/404.jpg')",
+      }),
+
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif'],
+        'prompt': ['Prompt', 'sans-serif'],
       }
     },
   },
