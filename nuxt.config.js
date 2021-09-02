@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Jeez - Web Developer',
+    title: 'Jeez',
 
     meta: [
       {
@@ -17,12 +17,12 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: "A Front-End Developer and UI/UX Designer.",
+        content: "A Front-end Developer and UI/UX Designer.",
       },
       {
         hid: 'og:description',
         name: 'og:description',
-        content: "A Front-End Developer and UI/UX Designer.",
+        content: "A Front-end Developer and UI/UX Designer.",
       },
       {
         hid: 'og:site_name',
@@ -37,7 +37,7 @@ export default {
       {
         hid: 'og:image',
         name: 'og:image',
-        content: 'profile.png',
+        content: 'https://jeez.codes/_nuxt/img/profile.b7fd470.png',
       }
     ],
     link: [
