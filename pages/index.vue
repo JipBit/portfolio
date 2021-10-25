@@ -2,7 +2,7 @@
 <div id="particles-js" class="relative z-10">
   <div id="container" class="lg:flex justify-center">
       <div class="text-center mt-8 lg:mt-32 lg:text-left lg:mr-32 max-w-md m-auto lg:m-0">
-          <img class="rounded-md w-48 h-48 mx-auto lg:mx-0" src="~/static/profile.png" alt="profile picture">
+          <img class="rounded-md w-48 h-48 mx-auto lg:mx-0" src="~/static/profile.jpg" alt="profile picture">
           
           <h1 class="text-5xl mt-6 font-black">Aye, I'm Jeez.</h1>
 
