@@ -32,7 +32,7 @@ export default {
       {
         hid: 'og:image',
         name: 'og:image',
-        content: 'profile.jpg',
+        content: '/profile.jpg',
       }
     ],
     link: [
