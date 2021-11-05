@@ -25,9 +25,14 @@ export default {
         content: "A self-taught developer who enjoys coding once in a blue moon...",
       },
       {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: "Personal Website",
+      },
+      {
         hid: 'theme-color',
         name: 'theme-color',
-        content: '#ffffff',
+        content: '#010101',
       },
       {
         hid: 'og:image',
