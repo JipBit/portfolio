@@ -10,34 +10,29 @@ export default {
       {
         hid: 'og:title',
         name: 'og:title',
-        content: 'Jeez',
+        content: 'Jeez - Portfolio',
       },
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: "A Front-end Developer and UI/UX Designer.",
+        content: "A self-taught developer who enjoys coding once in a blue moon...",
       },
       {
         hid: 'og:description',
         name: 'og:description',
-        content: "A Front-end Developer and UI/UX Designer.",
-      },
-      {
-        hid: 'og:site_name',
-        name: 'og:site_name',
-        content: "Portfolio",
+        content: "A self-taught developer who enjoys coding once in a blue moon...",
       },
       {
         hid: 'theme-color',
         name: 'theme-color',
-        content: '#febe07',
+        content: '#ffffff',
       },
       {
         hid: 'og:image',
         name: 'og:image',
-        content: 'https://jeez.codes/_nuxt/img/profile.b7fd470.png',
+        content: 'profile.jpg',
       }
     ],
     link: [
